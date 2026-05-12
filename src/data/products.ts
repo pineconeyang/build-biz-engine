@@ -97,6 +97,9 @@ import dm30LaserSystem4 from "@/assets/products/dm30a-laser-system-4.jpg";
 import dm30LaserElectrical from "@/assets/products/dm30a-laser-electrical.jpg";
 import dm30LaserSeparator from "@/assets/products/dm30a-laser-separator.jpg";
 import dm30LaserAirend from "@/assets/products/dm30a-laser-airend.jpg";
+import dm50aasSystem1 from "@/assets/products/dm50aas-system-1.jpg";
+import dm50aasSystem2 from "@/assets/products/dm50aas-system-2.jpg";
+import dm50aasSystemRear from "@/assets/products/dm50aas-system-rear.jpg";
 
 export type MediaItem =
   | { type: "image"; src: string }
