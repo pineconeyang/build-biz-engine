@@ -34,6 +34,7 @@ export const Route = createFileRoute("/products/$productId")({
 function ProductDetail() {
   const { productId } = Route.useParams();
   const p = products.find(x => x.id === productId)!;
+  const [tab, setTab] = useState<"overview" | "specs" | "applications">("overview");
   const related = products.filter(x => x.id !== p.id).slice(0, 3);
 
   return (
