@@ -50,18 +50,7 @@ function ProductDetail() {
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
-          <div>
-            <div className="rounded-2xl overflow-hidden bg-muted shadow-elegant">
-              <ProductImage src={p.image} alt={p.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
-            </div>
-            <div className="grid grid-cols-3 gap-3 mt-4">
-              {[0, 1, 2].map(i => (
-                <div key={i} className="aspect-square rounded-lg overflow-hidden border bg-muted">
-                  <ProductImage src={p.image} alt="" className="w-full h-full" imgClassName="object-cover" />
-                </div>
-              ))}
-            </div>
-          </div>
+          <ProductGallery product={p} />
           <div>
             <div className="text-xs text-primary font-semibold uppercase tracking-widest">{p.category}</div>
             <h1 className="mt-3 text-4xl md:text-5xl font-bold text-balance">{p.name}</h1>
