@@ -70,6 +70,15 @@ import lpm100OpenElectrical from "@/assets/products/lpm100hp-open-electrical.jpg
 import lpm100DetailAirend from "@/assets/products/lpm100hp-detail-airend.jpg";
 import lpm100DetailFan from "@/assets/products/lpm100hp-detail-fan.jpg";
 
+import lpm100aMain from "@/assets/products/lpm100a-main.jpg";
+import lpm100aAngle1 from "@/assets/products/lpm100a-angle-1.jpg";
+import lpm100aAngle2 from "@/assets/products/lpm100a-angle-2.jpg";
+import lpm100aAngle3 from "@/assets/products/lpm100a-angle-3.jpg";
+import lpm100aDetailAirend from "@/assets/products/lpm100a-detail-airend.jpg";
+import lpm100aDetailFan from "@/assets/products/lpm100a-detail-fan.jpg";
+import lpm100aDetailSeparator from "@/assets/products/lpm100a-detail-separator.jpg";
+import lpm100aDetailValve from "@/assets/products/lpm100a-detail-valve.jpg";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
@@ -457,6 +466,60 @@ export const products: Product[] = [
       "Woodworking & furniture production",
       "Textile, packaging & printing factories",
       "Overseas EPC project standard configuration",
+    ],
+  },
+  {
+    id: "lpm100hp-dm100a",
+    name: "LPM100HP / DM-100A Stationary Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "100HP / 75 kW classic-platform stationary screw air compressor — proven, serviceable, export-ready.",
+    description:
+      "The LPM100HP (DM-100A series) is a 100-horsepower stationary screw air compressor built on our long-running mature platform. The classic design favors mechanical simplicity, easy maintenance and global parts availability — making it a reliable workhorse for distributors, rental fleets, large workshops and overseas project standard configurations. Heavy-gauge steel enclosure, premium twin-screw airend, large vertical oil/air separator, IE3 high-efficiency 75 kW motor and PLC HMI controller deliver stable, high-volume air supply for general industrial use.",
+    image: lpm100aMain,
+    gallery: [
+      lpm100aMain,
+      lpm100aAngle1,
+      lpm100aAngle2,
+      lpm100aAngle3,
+      lpm100aDetailAirend,
+      lpm100aDetailValve,
+      lpm100aDetailSeparator,
+      lpm100aDetailFan,
+    ],
+    features: [
+      "Proven classic platform — long production history, global parts supply",
+      "Premium twin-screw airend, low-speed direct drive",
+      "IE3 high-efficiency 75 kW main motor",
+      "Large vertical oil/air separator with high-efficiency element",
+      "Heavy-duty radiator + large axial cooling fan",
+      "PLC touchscreen controller, multi-language UI, emergency stop",
+      "Independent intake valve & dual oil filters — long service life",
+      "Heavy-gauge welded steel frame with anti-vibration mounts",
+      "Large mesh ventilation panels — efficient heat dissipation",
+      "Wide-open service doors for fast filter & oil maintenance",
+      "Forklift-ready base frame, export wooden case packing",
+    ],
+    specs: [
+      { label: "Model", value: "LPM100HP / DM-100A" },
+      { label: "Motor Power", value: "75 kW (100 HP)" },
+      { label: "Working Pressure", value: "7 / 8 / 10 / 13 bar" },
+      { label: "Air Delivery", value: "13.5 / 12.7 / 11.0 / 9.0 m³/min" },
+      { label: "Drive", value: "Direct drive (1:1 coupling)" },
+      { label: "Cooling", value: "Air-cooled" },
+      { label: "Noise Level", value: "≤ 75 dB(A) @ 1 m" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet Pipe", value: "G 2\"" },
+      { label: "Dimensions (L×W×H)", value: "1900 × 1250 × 1550 mm" },
+      { label: "Weight", value: "≈ 1,300 kg" },
+      { label: "Warranty", value: "12 months main unit" },
+    ],
+    applications: [
+      "Laser cutting & heavy sheet metal workshops",
+      "Sandblasting, painting & surface treatment",
+      "Mining, drilling & infrastructure support",
+      "Woodworking & furniture production",
+      "Textile, packaging & printing factories",
+      "Distributor stocking, rental fleets & overseas EPC projects",
     ],
   },
   {
