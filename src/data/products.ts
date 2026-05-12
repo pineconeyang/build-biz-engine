@@ -1,6 +1,14 @@
 import banner1 from "@/assets/banner-1.png";
 import banner2 from "@/assets/banner-2.png";
 import banner3 from "@/assets/banner-3.png";
+import siteFactory from "@/assets/site-factory.jpg";
+import siteSystem from "@/assets/site-system.jpg";
+import siteMachineBlue from "@/assets/site-machine-blue.jpg";
+import siteMachineYellow from "@/assets/site-machine-yellow.jpg";
+import siteMachineYellow2 from "@/assets/site-machine-yellow-2.jpg";
+import siteDetailFan from "@/assets/site-detail-fan.jpg";
+import siteDetailAirend from "@/assets/site-detail-airend.jpg";
+import siteInterior from "@/assets/site-interior.jpg";
 
 export type Product = {
   id: string;
@@ -8,10 +16,21 @@ export type Product = {
   category: string;
   tagline: string;
   description: string;
-  image: string;
+  image?: string;
   features: string[];
   specs: { label: string; value: string }[];
   applications: string[];
+};
+
+export const siteImages = {
+  factory: siteFactory,
+  system: siteSystem,
+  machineBlue: siteMachineBlue,
+  machineYellow: siteMachineYellow,
+  machineYellow2: siteMachineYellow2,
+  detailFan: siteDetailFan,
+  detailAirend: siteDetailAirend,
+  interior: siteInterior,
 };
 
 export const products: Product[] = [
@@ -22,7 +41,6 @@ export const products: Product[] = [
     tagline: "High-efficiency rotary screw compression for continuous industrial duty.",
     description:
       "A factory-direct rotary screw air compressor engineered for stable, long-hour operation. Built with proven main airend, energy-efficient motor and integrated control panel for reliable compressed air supply across manufacturing, construction and processing sites.",
-    image: banner1,
     features: [
       "Premium twin-screw airend with low rotation speed",
       "IE3 high-efficiency motor with thermal protection",
@@ -47,7 +65,6 @@ export const products: Product[] = [
     tagline: "Heavy-duty reciprocating compressor for workshops and field operations.",
     description:
       "Robust piston-type air compressor built for intermittent and high-pressure applications. Cast-iron cylinder, finned cooling and reinforced air tank deliver dependable performance in demanding workshop and outdoor environments.",
-    image: banner2,
     features: [
       "Cast-iron heavy-duty cylinder block",
       "High pressure up to 30 bar (custom)",
@@ -72,7 +89,6 @@ export const products: Product[] = [
     tagline: "Stable dew-point control to protect downstream equipment.",
     description:
       "A refrigerated air dryer that removes water vapour from compressed air systems, protecting pneumatic tools, valves and production lines. Compact design with energy-efficient refrigeration circuit.",
-    image: banner3,
     features: [
       "Stable pressure dew point 2~10°C",
       "Branded refrigeration compressor",
@@ -97,7 +113,6 @@ export const products: Product[] = [
     tagline: "Pressure-rated storage vessels for stable air supply.",
     description:
       "Carbon-steel air receiver tanks fabricated to international pressure-vessel standards. Used to stabilise compressed air output, reduce compressor cycling and store reserve air for peak demand.",
-    image: banner1,
     features: [
       "Q345R / SA516 carbon steel construction",
       "Hydrostatic pressure tested",
@@ -122,7 +137,6 @@ export const products: Product[] = [
     tagline: "On-site nitrogen generation tailored to your project.",
     description:
       "Customized PSA (pressure swing adsorption) nitrogen generator integrated with screw compressor, dryer and air tanks. Suitable for laser cutting, electronics, food packaging, oil and gas applications.",
-    image: banner2,
     features: [
       "Purity 95% – 99.999% configurable",
       "Imported CMS molecular sieve",
@@ -147,7 +161,6 @@ export const products: Product[] = [
     tagline: "Complete after-sales parts support for compressor systems.",
     description:
       "Genuine and OEM-equivalent spare parts including air filters, oil filters, oil separators, lubricants, valves and motors. Maintenance kits packaged by service interval for fast deployment.",
-    image: banner3,
     features: [
       "Air / oil / separator filter sets",
       "Genuine compressor lubricants",
