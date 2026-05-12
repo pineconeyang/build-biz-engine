@@ -20,6 +20,10 @@ import lf250Fans2 from "@/assets/products/lf250hp-fans-2.jpg";
 import lf250Separator from "@/assets/products/lf250hp-separator.jpg";
 import lf250Motor from "@/assets/products/lf250hp-motor.jpg";
 
+export type MediaItem =
+  | { type: "image"; src: string }
+  | { type: "video"; src: string; poster?: string };
+
 export type Product = {
   id: string;
   name: string;
@@ -27,7 +31,7 @@ export type Product = {
   tagline: string;
   description: string;
   image?: string;
-  gallery?: string[];
+  gallery?: (string | MediaItem)[];
   features: string[];
   specs: { label: string; value: string }[];
   applications: string[];
