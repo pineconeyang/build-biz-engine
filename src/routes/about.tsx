@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { products } from "@/data/products";
+import { products, siteImages } from "@/data/products";
 import { Building2, Globe2, Users2, Trophy, Target, Eye, Heart, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/about")({

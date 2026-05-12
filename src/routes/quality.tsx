@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShieldCheck, Microscope, Boxes, ClipboardCheck, Award, ArrowRight } from "lucide-react";
-import { products } from "@/data/products";
+import { products, siteImages } from "@/data/products";
 
 export const Route = createFileRoute("/quality")({
   head: () => ({
