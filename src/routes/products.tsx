@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { products } from "@/data/products";
+import { ProductImage } from "@/components/site/ProductImage";
 import { ArrowRight, Search } from "lucide-react";
 
 export const Route = createFileRoute("/products")({
@@ -63,7 +64,7 @@ function ProductsPage() {
               {list.map(p => (
                 <Link key={p.id} to="/products/$productId" params={{ productId: p.id }} className="group bg-card rounded-xl border overflow-hidden hover:shadow-elegant hover:-translate-y-1 transition-all">
                   <div className="aspect-[4/3] overflow-hidden bg-muted">
-                    <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                    <ProductImage src={p.image} alt={p.name} className="w-full h-full" imgClassName="object-cover group-hover:scale-105 transition duration-700" />
                   </div>
                   <div className="p-6">
                     <div className="text-xs text-primary font-semibold uppercase tracking-wider">{p.category}</div>

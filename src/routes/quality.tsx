@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShieldCheck, Microscope, Boxes, ClipboardCheck, Award, ArrowRight } from "lucide-react";
-import { products } from "@/data/products";
+import { products, siteImages } from "@/data/products";
 
 export const Route = createFileRoute("/quality")({
   head: () => ({
@@ -35,7 +35,7 @@ function QualityPage() {
 
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-          <img src={products[2].image} alt="Quality control" className="rounded-2xl shadow-elegant" />
+          <img src={siteImages.detailAirend} alt="Quality control inspection of airend" className="rounded-2xl shadow-elegant w-full h-[460px] object-cover" />
           <div>
             <h2 className="text-4xl font-bold text-balance">Five-stage quality control system</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">From machine selection and configuration confirmation to pre-shipment inspection, every step is documented to ensure reliable performance on overseas jobsites.</p>
