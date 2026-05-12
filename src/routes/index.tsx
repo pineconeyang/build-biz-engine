@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { HeroCarousel } from "@/components/site/HeroCarousel";
-import { products } from "@/data/products";
+import { ProductImage } from "@/components/site/ProductImage";
+import { products, siteImages } from "@/data/products";
 import {
   ShieldCheck, Wrench, PackageCheck, Settings2, Truck, Headphones,
   Globe2, Award, ArrowRight, CheckCircle2, Factory, Boxes,
@@ -79,7 +80,7 @@ function Home() {
           </div>
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-accent opacity-20 blur-3xl rounded-full" />
-            <img src={products[0].image} alt="LONGLI Machinery" className="relative rounded-2xl shadow-elegant" />
+            <img src={siteImages.factory} alt="LONGLI Machinery production base" className="relative rounded-2xl shadow-elegant w-full h-[460px] object-cover" />
             <div className="absolute -bottom-6 -left-6 bg-card border rounded-xl p-5 shadow-elegant max-w-[220px]">
               <div className="text-3xl font-bold text-primary">2010</div>
               <div className="text-xs text-muted-foreground mt-1">Founded · Long-term focus on global engineering machinery export</div>
@@ -102,7 +103,7 @@ function Home() {
             {products.slice(0, 6).map(p => (
               <Link key={p.id} to="/products/$productId" params={{ productId: p.id }} className="group bg-card rounded-xl overflow-hidden border hover:shadow-elegant transition-all hover:-translate-y-1">
                 <div className="aspect-[4/3] overflow-hidden bg-muted">
-                  <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+                  <ProductImage src={p.image} alt={p.name} className="w-full h-full" imgClassName="object-cover group-hover:scale-105 transition duration-700" />
                 </div>
                 <div className="p-6">
                   <div className="text-xs text-primary font-semibold uppercase tracking-wider">{p.category}</div>
