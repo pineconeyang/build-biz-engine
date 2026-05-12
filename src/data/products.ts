@@ -88,6 +88,16 @@ import dc30Electrical from "@/assets/products/dc30aas-electrical.jpg";
 import dc30Separator from "@/assets/products/dc30aas-separator.jpg";
 import dc30Airend from "@/assets/products/dc30aas-airend.jpg";
 
+import dm30LaserPackshot from "@/assets/products/dm30a-laser-packshot.png";
+import dm30LaserFront from "@/assets/products/dm30a-laser-front.jpg";
+import dm30LaserSystem1 from "@/assets/products/dm30a-laser-system-1.jpg";
+import dm30LaserSystem2 from "@/assets/products/dm30a-laser-system-2.jpg";
+import dm30LaserSystem3 from "@/assets/products/dm30a-laser-system-3.jpg";
+import dm30LaserSystem4 from "@/assets/products/dm30a-laser-system-4.jpg";
+import dm30LaserElectrical from "@/assets/products/dm30a-laser-electrical.jpg";
+import dm30LaserSeparator from "@/assets/products/dm30a-laser-separator.jpg";
+import dm30LaserAirend from "@/assets/products/dm30a-laser-airend.jpg";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
@@ -584,6 +594,60 @@ export const products: Product[] = [
       "Electronics, optics & precision assembly",
       "Mining, oilfield & remote site deployment",
       "Distributor stocking & rental fleets",
+    ],
+  },
+  {
+    id: "dm30a-laser-skid-mounted-system",
+    name: "DM-30A Skid-Mounted Integrated Air System for Laser Cutting",
+    category: "Skid-Mounted Integrated System",
+    tagline: "30HP laser-cutting air station — compressor + tank + dryer + filters on one skid, ready to run.",
+    description:
+      "The DM-30A is a skid-mounted integrated compressed air system specially configured for laser cutting applications. It combines a 30HP screw air compressor, vertical air receiver, refrigerated dryer, precision line filters and all interconnecting piping on one heavy-duty base frame, delivering stable, dry and clean compressed air from a single plug-and-play package. This layout reduces installation time, saves floor space and gives laser-cutting workshops a neat, export-ready air station that is easy to ship, position and commission.",
+    image: dm30LaserPackshot,
+    gallery: [
+      dm30LaserPackshot,
+      dm30LaserSystem1,
+      dm30LaserSystem2,
+      dm30LaserFront,
+      dm30LaserSystem3,
+      dm30LaserSystem4,
+      dm30LaserElectrical,
+      dm30LaserSeparator,
+      dm30LaserAirend,
+    ],
+    features: [
+      "Integrated skid layout — compressor, tank, dryer and filters in one system",
+      "Configured specifically for laser cutting clean-air demand",
+      "Factory pre-piped, pre-wired and pressure-tested — fast commissioning",
+      "30HP / 22 kW screw air compressor with stable continuous output",
+      "Vertical air receiver for pressure buffering and flow stability",
+      "Refrigerated dryer for dry compressed air and reduced downstream moisture",
+      "Multi-stage precision filters for cleaner air quality",
+      "Compact welded steel skid base — easy forklift handling and container loading",
+      "Independent electrical section for cleaner wiring and easier service",
+      "Professional export presentation for distributors and project supply",
+    ],
+    specs: [
+      { label: "System Model", value: "DM-30A Integrated Laser Cutting Air System" },
+      { label: "Compressor Power", value: "22 kW (30 HP)" },
+      { label: "System Type", value: "Skid-mounted all-in-one air station" },
+      { label: "Working Pressure", value: "8 / 10 bar typical for laser cutting" },
+      { label: "Air Delivery", value: "Approx. 3.1–3.6 m³/min" },
+      { label: "Air Receiver", value: "Vertical storage tank, integrated on skid" },
+      { label: "Dryer", value: "Refrigerated air dryer, matched capacity" },
+      { label: "Filtration", value: "Precision multi-stage line filters" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Installation", value: "Plug & play skid-mounted package" },
+      { label: "Packing", value: "Export-ready skid / wooden case solution" },
+      { label: "Warranty", value: "12 months main components" },
+    ],
+    applications: [
+      "Fiber laser cutting workshops",
+      "Sheet metal fabrication plants",
+      "Precision metal processing lines",
+      "Factory upgrades needing clean compressed air",
+      "Dealer projects and overseas packaged supply",
+      "Sites requiring fast installation and compact layout",
     ],
   },
   {
