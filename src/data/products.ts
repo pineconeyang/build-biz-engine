@@ -40,6 +40,12 @@ import lpm30Rear from "@/assets/products/lpm30hp-rear.png";
 import lpm30Dhh37Open from "@/assets/products/lpm30hp-dhh37bm-open.jpg";
 import lpm30Dhh37Airend from "@/assets/products/lpm30hp-dhh37bm-airend.jpg";
 
+import lpm50Main from "@/assets/products/lpm50hp-main.jpg";
+import lpm50Angle1 from "@/assets/products/lpm50hp-angle-1.png";
+import lpm50Angle2 from "@/assets/products/lpm50hp-angle-2.png";
+import lpm50Open1 from "@/assets/products/lpm50hp-open-1.png";
+import lpm50Open2 from "@/assets/products/lpm50hp-open-2.png";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
@@ -220,6 +226,55 @@ export const products: Product[] = [
       "Textile & garment factories",
       "General manufacturing with variable air demand",
       "Energy-saving retrofit & overseas EPC projects",
+    ],
+  },
+  {
+    id: "lpm50hp-dhh37bm-classic",
+    name: "LPM50HP / DHH37BM Classic Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "50HP / 37 kW classic-frame stationary screw compressor — proven, serviceable, export-ready.",
+    description:
+      "The LPM50HP (DHH37BM classic series) is a 50-horsepower stationary screw air compressor built on our long-running mature platform. Designed for distributors, rental fleets and overseas project standard configurations where uptime, easy maintenance and parts availability matter most. Heavy-gauge steel enclosure, premium twin-screw airend, large oil/air separator and PLC controller deliver stable, reliable air supply for general industrial use.",
+    image: lpm50Main,
+    gallery: [
+      lpm50Main,
+      lpm50Angle1,
+      lpm50Angle2,
+      lpm50Open1,
+      lpm50Open2,
+    ],
+    features: [
+      "Proven classic platform — long production history, global parts supply",
+      "Premium twin-screw airend, low-speed direct drive",
+      "IE3 high-efficiency 37 kW main motor",
+      "Large oil/air separator tank with high-efficiency element",
+      "PLC touchscreen controller, multi-language UI, emergency stop",
+      "Heavy-duty radiator — stable performance in hot climates",
+      "Wide service doors — fast filter & oil maintenance",
+      "Heavy-gauge steel enclosure with acoustic foam — low noise",
+      "Forklift-ready base frame, export wooden case packing",
+    ],
+    specs: [
+      { label: "Model", value: "LPM50HP / DHH37BM" },
+      { label: "Motor Power", value: "37 kW (50 HP)" },
+      { label: "Working Pressure", value: "7 / 8 / 10 / 13 bar" },
+      { label: "Air Delivery", value: "6.7 / 6.3 / 5.4 / 4.3 m³/min" },
+      { label: "Drive", value: "Direct drive (1:1 coupling)" },
+      { label: "Cooling", value: "Air-cooled" },
+      { label: "Noise Level", value: "≤ 72 dB(A) @ 1 m" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet Pipe", value: "G 1-1/2\"" },
+      { label: "Dimensions (L×W×H)", value: "1500 × 1000 × 1280 mm" },
+      { label: "Weight", value: "≈ 720 kg" },
+      { label: "Warranty", value: "12 months main unit" },
+    ],
+    applications: [
+      "General manufacturing & medium workshops",
+      "Auto repair, tire & body shops",
+      "Construction & infrastructure projects",
+      "Pneumatic tools, sandblasting & assembly lines",
+      "Distributor stocking & rental fleets",
+      "Overseas EPC project standard configuration",
     ],
   },
   {
