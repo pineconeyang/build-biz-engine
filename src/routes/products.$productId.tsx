@@ -50,18 +50,7 @@ function ProductDetail() {
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
-          <div>
-            <div className="rounded-2xl overflow-hidden bg-muted shadow-elegant">
-              <ProductImage src={p.image} alt={p.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
-            </div>
-            <div className="grid grid-cols-3 gap-3 mt-4">
-              {[0, 1, 2].map(i => (
-                <div key={i} className="aspect-square rounded-lg overflow-hidden border bg-muted">
-                  <ProductImage src={p.image} alt="" className="w-full h-full" imgClassName="object-cover" />
-                </div>
-              ))}
-            </div>
-          </div>
+          <ProductGallery product={p} />
           <div>
             <div className="text-xs text-primary font-semibold uppercase tracking-widest">{p.category}</div>
             <h1 className="mt-3 text-4xl md:text-5xl font-bold text-balance">{p.name}</h1>
@@ -167,5 +156,34 @@ function ProductDetail() {
         </div>
       </section>
     </>
+  );
+}
+
+function ProductGallery({ product }: { product: import("@/data/products").Product }) {
+  const images = product.gallery && product.gallery.length > 0 ? product.gallery : product.image ? [product.image] : [];
+  const [active, setActive] = useState(0);
+  const main = images[active];
+
+  return (
+    <div>
+      <div className="rounded-2xl overflow-hidden bg-muted shadow-elegant">
+        <ProductImage src={main} alt={product.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
+      </div>
+      {images.length > 1 && (
+        <div className="grid grid-cols-5 gap-3 mt-4">
+          {images.slice(0, 10).map((src, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setActive(i)}
+              className={`aspect-square rounded-lg overflow-hidden border-2 bg-muted transition ${i === active ? "border-primary shadow-elegant" : "border-transparent hover:border-border"}`}
+              aria-label={`View image ${i + 1}`}
+            >
+              <img src={src} alt="" className="w-full h-full object-cover" />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

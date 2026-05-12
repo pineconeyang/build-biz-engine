@@ -10,6 +10,16 @@ import siteDetailFan from "@/assets/site-detail-fan.jpg";
 import siteDetailAirend from "@/assets/site-detail-airend.jpg";
 import siteInterior from "@/assets/site-interior.jpg";
 
+import lf250Main from "@/assets/products/lf250hp-main.jpg";
+import lf250Front from "@/assets/products/lf250hp-front.jpg";
+import lf250Cabinet1 from "@/assets/products/lf250hp-cabinet-1.jpg";
+import lf250Cabinet2 from "@/assets/products/lf250hp-cabinet-2.jpg";
+import lf250Controller from "@/assets/products/lf250hp-controller.jpg";
+import lf250Fans1 from "@/assets/products/lf250hp-fans-1.jpg";
+import lf250Fans2 from "@/assets/products/lf250hp-fans-2.jpg";
+import lf250Separator from "@/assets/products/lf250hp-separator.jpg";
+import lf250Motor from "@/assets/products/lf250hp-motor.jpg";
+
 export type Product = {
   id: string;
   name: string;
@@ -17,6 +27,7 @@ export type Product = {
   tagline: string;
   description: string;
   image?: string;
+  gallery?: string[];
   features: string[];
   specs: { label: string; value: string }[];
   applications: string[];
@@ -34,6 +45,58 @@ export const siteImages = {
 };
 
 export const products: Product[] = [
+  {
+    id: "lf250hp-screw-compressor",
+    name: "LF250HP Stationary Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "250HP / 185 kW heavy-duty screw compressor for high-demand industrial air systems.",
+    description:
+      "The LF250HP is a 250-horsepower stationary rotary screw air compressor engineered for continuous, high-load operation. Built around a premium twin-screw airend, IE3 high-efficiency motor and Schneider-grade electrical control system, it delivers stable compressed air for laser cutting, large workshops, mining, gas separation and process industries. The acoustic enclosure, dual-fan air-cooled radiator and integrated oil/air separator tank are configured for low noise, low vibration and easy maintenance — ready for export-grade installation.",
+    image: lf250Main,
+    gallery: [
+      lf250Main,
+      lf250Front,
+      lf250Cabinet1,
+      lf250Cabinet2,
+      lf250Controller,
+      lf250Fans1,
+      lf250Fans2,
+      lf250Separator,
+      lf250Motor,
+    ],
+    features: [
+      "Premium twin-screw airend, low-speed direct drive",
+      "IE3 high-efficiency 185 kW main motor",
+      "Schneider TeSys contactors & industrial-grade electrical cabinet",
+      "PLC touchscreen controller with multi-language interface",
+      "Dual axial cooling fans for high ambient temperature stability",
+      "Integrated oil/air separator tank with safety pressure relief",
+      "Acoustic-foam enclosure — operating noise ≤ 75 dB(A)",
+      "Reinforced base frame for forklift handling & container loading",
+    ],
+    specs: [
+      { label: "Model", value: "LF250HP / DHH250B" },
+      { label: "Motor Power", value: "185 kW (250 HP)" },
+      { label: "Working Pressure", value: "7 / 8 / 10 / 13 bar" },
+      { label: "Air Delivery", value: "32.0 / 30.5 / 27.0 / 23.5 m³/min" },
+      { label: "Cooling", value: "Air-cooled (dual fan) / Water-cooled optional" },
+      { label: "Drive", value: "Direct drive, coupling connection" },
+      { label: "Noise Level", value: "≤ 75 dB(A) @ 1 m" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet Pipe", value: "DN65 flange" },
+      { label: "Dimensions (L×W×H)", value: "2700 × 1850 × 1950 mm" },
+      { label: "Weight", value: "≈ 2,950 kg" },
+      { label: "Warranty", value: "12 months main unit" },
+    ],
+    applications: [
+      "Laser cutting & sheet metal",
+      "Mining & quarry operations",
+      "Cement & building materials",
+      "Petrochemical & gas separation",
+      "Textile & non-woven production",
+      "Large-scale automotive plants",
+    ],
+  },
   {
     id: "screw-air-compressor",
     name: "DMZY-30A Screw Air Compressor",
