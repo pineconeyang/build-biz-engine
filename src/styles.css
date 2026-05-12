@@ -136,12 +136,22 @@
 }
 
 @layer base {
-  * {
-    border-color: var(--color-border);
-  }
-
+  * { border-color: var(--color-border); }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif;
   }
+  h1, h2, h3, h4 { letter-spacing: -0.02em; }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-accent { background-image: var(--gradient-accent); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .text-balance { text-wrap: balance; }
+  @keyframes fade-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .animate-fade-up { animation: fade-up 0.7s ease-out both; }
+  @keyframes slide-fade { from { opacity: 0; transform: scale(1.04); } to { opacity: 1; transform: scale(1); } }
+  .animate-slide-fade { animation: slide-fade 0.9s ease-out both; }
 }
