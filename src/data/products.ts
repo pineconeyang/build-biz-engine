@@ -60,6 +60,16 @@ import lpm75SideTank from "@/assets/products/lpm75hp-side-tank.jpg";
 import lpm75Internal from "@/assets/products/lpm75hp-internal.jpg";
 import lpm75RearVent from "@/assets/products/lpm75hp-rear-vent.jpg";
 
+import lpm100Main from "@/assets/products/lpm100hp-main.jpg";
+import lpm100Angle1 from "@/assets/products/lpm100hp-angle-1.jpg";
+import lpm100Angle2 from "@/assets/products/lpm100hp-angle-2.jpg";
+import lpm100OpenSeparator from "@/assets/products/lpm100hp-open-separator.jpg";
+import lpm100OpenAirend from "@/assets/products/lpm100hp-open-airend.jpg";
+import lpm100RearAirfilter from "@/assets/products/lpm100hp-rear-airfilter.jpg";
+import lpm100OpenElectrical from "@/assets/products/lpm100hp-open-electrical.jpg";
+import lpm100DetailAirend from "@/assets/products/lpm100hp-detail-airend.jpg";
+import lpm100DetailFan from "@/assets/products/lpm100hp-detail-fan.jpg";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
@@ -384,6 +394,60 @@ export const products: Product[] = [
       { label: "Outlet Pipe", value: "G 2\"" },
       { label: "Dimensions (L×W×H)", value: "1750 × 1180 × 1450 mm" },
       { label: "Weight", value: "≈ 1,050 kg" },
+      { label: "Warranty", value: "12 months main unit" },
+    ],
+    applications: [
+      "Laser cutting & heavy sheet metal workshops",
+      "Sandblasting, painting & surface treatment",
+      "Mining, drilling & infrastructure support",
+      "Woodworking & furniture production",
+      "Textile, packaging & printing factories",
+      "Overseas EPC project standard configuration",
+    ],
+  },
+  {
+    id: "lpm100hp-dhh75bm-1",
+    name: "LPM100HP / DHH75BM-1 Stationary Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "100HP / 75 kW heavy-duty stationary screw air compressor — high air delivery, robust frame, export-ready.",
+    description:
+      "The LPM100HP (DHH75BM-1 series) is a 100-horsepower stationary screw air compressor engineered for medium-to-large factories and overseas industrial projects. Built on a heavy-duty welded steel frame with a premium twin-screw airend, IE3 high-efficiency 75 kW motor, large vertical oil/air separator and PLC HMI controller, it delivers stable, high-volume compressed air for laser cutting, sandblasting, mining, woodworking, textile and general manufacturing. Optional electrical cabinet with VSD inverter is available for energy-saving applications.",
+    image: lpm100Main,
+    gallery: [
+      lpm100Main,
+      lpm100Angle1,
+      lpm100Angle2,
+      lpm100OpenSeparator,
+      lpm100OpenAirend,
+      lpm100RearAirfilter,
+      lpm100OpenElectrical,
+      lpm100DetailAirend,
+      lpm100DetailFan,
+    ],
+    features: [
+      "Premium twin-screw airend, low-speed direct drive",
+      "IE3 high-efficiency 75 kW main motor",
+      "Large vertical oil/air separator with high-efficiency element",
+      "Heavy-duty radiator + large axial cooling fan",
+      "PLC touchscreen controller, multi-language UI, emergency stop",
+      "Independent electrical cabinet — clean wiring, optional VSD inverter",
+      "Heavy-gauge welded steel frame with anti-vibration mounts",
+      "Large mesh ventilation panels — efficient heat dissipation",
+      "Wide-open maintenance doors for fast filter & oil service",
+      "Forklift-ready base frame, export wooden case packing",
+    ],
+    specs: [
+      { label: "Model", value: "LPM100HP / DHH75BM-1" },
+      { label: "Motor Power", value: "75 kW (100 HP)" },
+      { label: "Working Pressure", value: "7 / 8 / 10 / 13 bar" },
+      { label: "Air Delivery", value: "13.5 / 12.7 / 11.0 / 9.0 m³/min" },
+      { label: "Drive", value: "Direct drive (1:1 coupling)" },
+      { label: "Cooling", value: "Air-cooled" },
+      { label: "Noise Level", value: "≤ 75 dB(A) @ 1 m" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet Pipe", value: "G 2\"" },
+      { label: "Dimensions (L×W×H)", value: "1900 × 1250 × 1550 mm" },
+      { label: "Weight", value: "≈ 1,300 kg" },
       { label: "Warranty", value: "12 months main unit" },
     ],
     applications: [
