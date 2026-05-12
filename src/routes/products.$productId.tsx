@@ -158,3 +158,32 @@ function ProductDetail() {
     </>
   );
 }
+
+function ProductGallery({ product }: { product: import("@/data/products").Product }) {
+  const images = product.gallery && product.gallery.length > 0 ? product.gallery : product.image ? [product.image] : [];
+  const [active, setActive] = useState(0);
+  const main = images[active];
+
+  return (
+    <div>
+      <div className="rounded-2xl overflow-hidden bg-muted shadow-elegant">
+        <ProductImage src={main} alt={product.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
+      </div>
+      {images.length > 1 && (
+        <div className="grid grid-cols-5 gap-3 mt-4">
+          {images.slice(0, 10).map((src, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setActive(i)}
+              className={`aspect-square rounded-lg overflow-hidden border-2 bg-muted transition ${i === active ? "border-primary shadow-elegant" : "border-transparent hover:border-border"}`}
+              aria-label={`View image ${i + 1}`}
+            >
+              <img src={src} alt="" className="w-full h-full object-cover" />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
