@@ -10,6 +10,16 @@ import siteDetailFan from "@/assets/site-detail-fan.jpg";
 import siteDetailAirend from "@/assets/site-detail-airend.jpg";
 import siteInterior from "@/assets/site-interior.jpg";
 
+import lf250Main from "@/assets/products/lf250hp-main.jpg";
+import lf250Front from "@/assets/products/lf250hp-front.jpg";
+import lf250Cabinet1 from "@/assets/products/lf250hp-cabinet-1.jpg";
+import lf250Cabinet2 from "@/assets/products/lf250hp-cabinet-2.jpg";
+import lf250Controller from "@/assets/products/lf250hp-controller.jpg";
+import lf250Fans1 from "@/assets/products/lf250hp-fans-1.jpg";
+import lf250Fans2 from "@/assets/products/lf250hp-fans-2.jpg";
+import lf250Separator from "@/assets/products/lf250hp-separator.jpg";
+import lf250Motor from "@/assets/products/lf250hp-motor.jpg";
+
 export type Product = {
   id: string;
   name: string;
@@ -17,6 +27,7 @@ export type Product = {
   tagline: string;
   description: string;
   image?: string;
+  gallery?: string[];
   features: string[];
   specs: { label: string; value: string }[];
   applications: string[];
