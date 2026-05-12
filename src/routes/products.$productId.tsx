@@ -1,5 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { products } from "@/data/products";
+import { ProductImage } from "@/components/site/ProductImage";
 import { ArrowLeft, ArrowRight, CheckCircle2, Download, Mail, Phone } from "lucide-react";
 import { useState } from "react";
 
@@ -51,12 +52,12 @@ function ProductDetail() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
           <div>
             <div className="rounded-2xl overflow-hidden bg-muted shadow-elegant">
-              <img src={p.image} alt={p.name} className="w-full aspect-[4/3] object-cover" />
+              <ProductImage src={p.image} alt={p.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
             </div>
             <div className="grid grid-cols-3 gap-3 mt-4">
-              {[p.image, p.image, p.image].map((src, i) => (
+              {[0, 1, 2].map(i => (
                 <div key={i} className="aspect-square rounded-lg overflow-hidden border bg-muted">
-                  <img src={src} alt="" className="w-full h-full object-cover" />
+                  <ProductImage src={p.image} alt="" className="w-full h-full" imgClassName="object-cover" />
                 </div>
               ))}
             </div>

@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { products } from "@/data/products";
+import { ProductImage } from "@/components/site/ProductImage";
 import { ArrowRight, Search } from "lucide-react";
 
 export const Route = createFileRoute("/products")({
