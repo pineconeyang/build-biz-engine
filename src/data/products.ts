@@ -26,6 +26,17 @@ import lpm20Poster3 from "@/assets/products/lpm20hp-poster-MVI_0053.jpg";
 import lpm20Poster4 from "@/assets/products/lpm20hp-poster-MVI_0055.jpg";
 import lpm20Poster5 from "@/assets/products/lpm20hp-poster-MVI_0067.jpg";
 
+import lpm30Main from "@/assets/products/lpm30hp-main.png";
+import lpm30Front from "@/assets/products/lpm30hp-front.png";
+import lpm30OpenFront from "@/assets/products/lpm30hp-open-front.png";
+import lpm30OpenCabinet from "@/assets/products/lpm30hp-open-cabinet.png";
+import lpm30OpenCabinet2 from "@/assets/products/lpm30hp-open-cabinet-2.png";
+import lpm30OpenSide from "@/assets/products/lpm30hp-open-side.png";
+import lpm30Side from "@/assets/products/lpm30hp-side.png";
+import lpm30Frame1 from "@/assets/products/lpm30hp-frame-1.png";
+import lpm30Frame2 from "@/assets/products/lpm30hp-frame-2.png";
+import lpm30Rear from "@/assets/products/lpm30hp-rear.png";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
