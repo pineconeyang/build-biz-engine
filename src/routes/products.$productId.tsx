@@ -160,26 +160,47 @@ function ProductDetail() {
 }
 
 function ProductGallery({ product }: { product: import("@/data/products").Product }) {
-  const images = product.gallery && product.gallery.length > 0 ? product.gallery : product.image ? [product.image] : [];
+  const raw = product.gallery && product.gallery.length > 0 ? product.gallery : product.image ? [product.image] : [];
+  const items = raw.map(item =>
+    typeof item === "string" ? { type: "image" as const, src: item, poster: undefined as string | undefined } : item
+  );
   const [active, setActive] = useState(0);
-  const main = images[active];
+  const main = items[active];
 
   return (
     <div>
       <div className="rounded-2xl overflow-hidden bg-muted shadow-elegant">
-        <ProductImage src={main} alt={product.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
+        {main && main.type === "video" ? (
+          <video
+            key={main.src}
+            src={main.src}
+            poster={main.poster}
+            controls
+            playsInline
+            className="w-full aspect-[4/3] object-cover bg-black"
+          />
+        ) : (
+          <ProductImage src={main?.src} alt={product.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
+        )}
       </div>
-      {images.length > 1 && (
+      {items.length > 1 && (
         <div className="grid grid-cols-5 gap-3 mt-4">
-          {images.slice(0, 10).map((src, i) => (
+          {items.slice(0, 10).map((it, i) => (
             <button
               key={i}
               type="button"
               onClick={() => setActive(i)}
-              className={`aspect-square rounded-lg overflow-hidden border-2 bg-muted transition ${i === active ? "border-primary shadow-elegant" : "border-transparent hover:border-border"}`}
-              aria-label={`View image ${i + 1}`}
+              className={`relative aspect-square rounded-lg overflow-hidden border-2 bg-muted transition ${i === active ? "border-primary shadow-elegant" : "border-transparent hover:border-border"}`}
+              aria-label={`View item ${i + 1}`}
             >
-              <img src={src} alt="" className="w-full h-full object-cover" />
+              <img src={it.type === "video" ? it.poster : it.src} alt="" className="w-full h-full object-cover" />
+              {it.type === "video" && (
+                <span className="absolute inset-0 grid place-items-center bg-black/30">
+                  <span className="w-7 h-7 rounded-full bg-white/90 grid place-items-center">
+                    <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-primary"><path d="M8 5v14l11-7z" /></svg>
+                  </span>
+                </span>
+              )}
             </button>
           ))}
         </div>
