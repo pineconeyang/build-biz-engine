@@ -37,6 +37,9 @@ import lpm30Frame1 from "@/assets/products/lpm30hp-frame-1.png";
 import lpm30Frame2 from "@/assets/products/lpm30hp-frame-2.png";
 import lpm30Rear from "@/assets/products/lpm30hp-rear.png";
 
+import lpm30Dhh37Open from "@/assets/products/lpm30hp-dhh37bm-open.jpg";
+import lpm30Dhh37Airend from "@/assets/products/lpm30hp-dhh37bm-airend.jpg";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
@@ -169,6 +172,54 @@ export const products: Product[] = [
       "Pneumatic tools & assembly",
       "Distributor stocking & rental fleets",
       "Overseas project standard configuration",
+    ],
+  },
+  {
+    id: "lpm30hp-dhh37bm",
+    name: "LPM30HP / DHH37BM PM-VSD Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "30HP / 22 kW permanent magnet VSD screw compressor — energy-saving, smart-controlled, factory-direct.",
+    description:
+      "The LPM30HP (DHH37BM series) is a 30-horsepower permanent magnet variable speed (PM-VSD) screw air compressor engineered for plants that demand stable pressure, lower energy bills and quiet operation. The integrated INOVANCE PM inverter and high-efficiency PM motor continuously match air output to real-time demand — typically saving 25–40% energy versus fixed-speed units. A premium twin-screw airend, large oil/air separator and centralized smart controller deliver consistent performance for laser cutting, electronics, packaging, textiles and general manufacturing.",
+    image: lpm30Dhh37Open,
+    gallery: [
+      lpm30Dhh37Open,
+      lpm30Dhh37Airend,
+    ],
+    features: [
+      "Permanent magnet (PM) motor + VSD inverter — 25–40% energy saving",
+      "INOVANCE industrial PM drive, stable across full speed range",
+      "Premium twin-screw airend, low-speed direct coupling",
+      "Large oil/air separator tank with high-efficiency element",
+      "Smart PLC controller with full-color HMI, multi-language",
+      "Soft start — no current surge, friendly to plant grid",
+      "Heavy-gauge steel enclosure with acoustic foam — low noise",
+      "Wide-open service doors for fast filter & oil maintenance",
+      "Forklift-ready base frame, export wooden case packing",
+    ],
+    specs: [
+      { label: "Model", value: "LPM30HP / DHH37BM" },
+      { label: "Motor Type", value: "Permanent Magnet (PM), IE4-class efficiency" },
+      { label: "Motor Power", value: "22 kW (30 HP)" },
+      { label: "Control", value: "VSD — variable speed drive (INOVANCE)" },
+      { label: "Working Pressure", value: "7 / 8 / 10 / 13 bar (adjustable)" },
+      { label: "Air Delivery", value: "3.8 / 3.6 / 3.1 / 2.6 m³/min" },
+      { label: "Drive", value: "Direct drive (1:1 coupling)" },
+      { label: "Cooling", value: "Air-cooled" },
+      { label: "Noise Level", value: "≤ 68 dB(A) @ 1 m" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet Pipe", value: "G 1\"" },
+      { label: "Dimensions (L×W×H)", value: "1250 × 850 × 1180 mm" },
+      { label: "Weight", value: "≈ 520 kg" },
+      { label: "Warranty", value: "12 months main unit / 24 months airend" },
+    ],
+    applications: [
+      "Laser cutting & sheet metal workshops",
+      "Electronics & precision assembly",
+      "Packaging & printing lines",
+      "Textile & garment factories",
+      "General manufacturing with variable air demand",
+      "Energy-saving retrofit & overseas EPC projects",
     ],
   },
   {
