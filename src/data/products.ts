@@ -97,6 +97,9 @@ import dm30LaserSystem4 from "@/assets/products/dm30a-laser-system-4.jpg";
 import dm30LaserElectrical from "@/assets/products/dm30a-laser-electrical.jpg";
 import dm30LaserSeparator from "@/assets/products/dm30a-laser-separator.jpg";
 import dm30LaserAirend from "@/assets/products/dm30a-laser-airend.jpg";
+import dm50aasSystem1 from "@/assets/products/dm50aas-system-1.jpg";
+import dm50aasSystem2 from "@/assets/products/dm50aas-system-2.jpg";
+import dm50aasSystemRear from "@/assets/products/dm50aas-system-rear.jpg";
 
 export type MediaItem =
   | { type: "image"; src: string }
@@ -636,6 +639,55 @@ export const products: Product[] = [
       { label: "Air Receiver", value: "Vertical storage tank, integrated on skid" },
       { label: "Dryer", value: "Refrigerated air dryer, matched capacity" },
       { label: "Filtration", value: "Precision multi-stage line filters" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Installation", value: "Plug & play skid-mounted package" },
+      { label: "Packing", value: "Export-ready skid / wooden case solution" },
+      { label: "Warranty", value: "12 months main components" },
+    ],
+    applications: [
+      "Fiber laser cutting workshops",
+      "Sheet metal fabrication plants",
+      "Precision metal processing lines",
+      "Factory upgrades needing clean compressed air",
+      "Dealer projects and overseas packaged supply",
+      "Sites requiring fast installation and compact layout",
+    ],
+  },
+  {
+    id: "dm50aas-laser-skid-mounted-system",
+    name: "DM50AAS Skid-Mounted Integrated Air System for Laser Cutting",
+    category: "Skid-Mounted Integrated System",
+    tagline: "50HP laser-cutting air station — compressor + dual tanks + dryer + filters on one skid.",
+    description:
+      "The DM50AAS is a 50HP skid-mounted integrated compressed air system purpose-built for fiber laser cutting and other clean-air applications. It packages a 50HP screw air compressor, vertical air receiver tanks, refrigerated dryer, multi-stage precision filters and all interconnecting piping on one heavy-duty welded steel skid. Factory pre-piped, pre-wired and pressure-tested, the unit ships as a single plug-and-play air station — saving floor space, cutting installation time and giving overseas distributors a clean, export-ready package.",
+    image: dm50aasSystem1,
+    gallery: [
+      dm50aasSystem1,
+      dm50aasSystem2,
+      dm50aasSystemRear,
+    ],
+    features: [
+      "Integrated skid layout — compressor, tanks, dryer and filters in one system",
+      "Configured specifically for laser cutting clean-air demand",
+      "Factory pre-piped, pre-wired and pressure-tested — fast commissioning",
+      "50HP / 37 kW screw air compressor with stable continuous output",
+      "Dual vertical air receivers for pressure buffering and flow stability",
+      "Refrigerated dryer for dry compressed air to ISO 8573-1 Class 4",
+      "Multi-stage precision line filters for cleaner air quality",
+      "Heavy-duty welded steel skid base — forklift handling and container loading",
+      "Independent electrical cabinet for cleaner wiring and easier service",
+      "Compact footprint vs. discrete component installation",
+      "Professional export presentation for distributors and project supply",
+    ],
+    specs: [
+      { label: "System Model", value: "DM50AAS Integrated Laser Cutting Air System" },
+      { label: "Compressor Power", value: "37 kW (50 HP)" },
+      { label: "System Type", value: "Skid-mounted all-in-one air station" },
+      { label: "Working Pressure", value: "8 / 10 bar typical for laser cutting" },
+      { label: "Air Delivery", value: "Approx. 5.5–6.2 m³/min" },
+      { label: "Air Receiver", value: "Dual vertical storage tanks, integrated on skid" },
+      { label: "Dryer", value: "Refrigerated air dryer, ISO 8573-1 Class 4" },
+      { label: "Filtration", value: "Precision multi-stage line filters (1µm / 0.01µm)" },
       { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
       { label: "Installation", value: "Plug & play skid-mounted package" },
       { label: "Packing", value: "Export-ready skid / wooden case solution" },
