@@ -79,6 +79,15 @@ import lpm100aDetailFan from "@/assets/products/lpm100a-detail-fan.jpg";
 import lpm100aDetailSeparator from "@/assets/products/lpm100a-detail-separator.jpg";
 import lpm100aDetailValve from "@/assets/products/lpm100a-detail-valve.jpg";
 
+import dc30System1 from "@/assets/products/dc30aas-system-1.jpg";
+import dc30System2 from "@/assets/products/dc30aas-system-2.jpg";
+import dc30SystemRear from "@/assets/products/dc30aas-system-rear.jpg";
+import dc30SystemSide from "@/assets/products/dc30aas-system-side.jpg";
+import dc30Front from "@/assets/products/dc30aas-front.jpg";
+import dc30Electrical from "@/assets/products/dc30aas-electrical.jpg";
+import dc30Separator from "@/assets/products/dc30aas-separator.jpg";
+import dc30Airend from "@/assets/products/dc30aas-airend.jpg";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
@@ -520,6 +529,61 @@ export const products: Product[] = [
       "Woodworking & furniture production",
       "Textile, packaging & printing factories",
       "Distributor stocking, rental fleets & overseas EPC projects",
+    ],
+  },
+  {
+    id: "dc30aas-skid-mounted-system",
+    name: "DC30AAS Skid-Mounted Integrated Air Compressor System",
+    category: "Skid-Mounted Integrated System",
+    tagline: "30HP all-in-one skid-mounted compressed air station — compressor + tank + dryer + filters, plug & play.",
+    description:
+      "The DC30AAS is a fully integrated skid-mounted compressed air station combining a 30HP screw air compressor, vertical air receiver tank, refrigerated air dryer, pre/post line filters and inter-connecting piping — all factory-assembled, tested and mounted on a single heavy-duty welded steel skid base. Customers receive a complete, ready-to-run clean-air solution: just connect power and the outlet pipe. Ideal for overseas projects, container shipment, rental fleets, laser cutting workshops, food & pharma, electronics and any site that needs fast deployment of stable, dry, oil-cleaned compressed air.",
+    image: dc30System1,
+    gallery: [
+      dc30System1,
+      dc30System2,
+      dc30Front,
+      dc30SystemRear,
+      dc30SystemSide,
+      dc30Electrical,
+      dc30Separator,
+      dc30Airend,
+    ],
+    features: [
+      "All-in-one skid: compressor + air tank + dryer + filters",
+      "Factory pre-piped, pre-wired and pressure-tested — plug & play",
+      "Heavy-duty welded steel skid base — forklift slots both sides",
+      "Compact footprint — fits 20'GP container, easy site relocation",
+      "30HP / 22 kW screw airend with IE3 high-efficiency motor",
+      "Vertical air receiver tank with safety valve & pressure gauge",
+      "Refrigerated air dryer — ISO 8573-1 Class 4 dewpoint",
+      "Pre & post line filters — particle / oil removal down to 0.01 µm",
+      "PLC controller with multi-language UI & emergency stop",
+      "Independent electrical cabinet — clean wiring, easy service",
+      "Export wooden case packing, full commissioning documents",
+    ],
+    specs: [
+      { label: "System Model", value: "DC30AAS Skid-Mounted Integrated System" },
+      { label: "Compressor", value: "DEHAHA 30HP / 22 kW screw air compressor" },
+      { label: "Working Pressure", value: "7 / 8 / 10 bar" },
+      { label: "Air Delivery (FAD)", value: "3.8 / 3.6 / 3.1 m³/min" },
+      { label: "Air Receiver Tank", value: "1.0 m³ vertical, 1.0 MPa rated" },
+      { label: "Air Dryer", value: "Refrigerated, matched capacity (ISO 8573-1 Class 4)" },
+      { label: "Line Filters", value: "Pre + post precision filters (1 µm / 0.01 µm)" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet", value: "G 1\" clean-air outlet" },
+      { label: "Skid Dimensions (L×W×H)", value: "≈ 2800 × 1100 × 1850 mm" },
+      { label: "Skid Weight", value: "≈ 950 kg (complete system)" },
+      { label: "Container", value: "1 set / 20'GP" },
+      { label: "Warranty", value: "12 months main components" },
+    ],
+    applications: [
+      "Overseas EPC projects requiring turnkey air station",
+      "Laser cutting & precision sheet metal workshops",
+      "Food, beverage & pharmaceutical clean-air lines",
+      "Electronics, optics & precision assembly",
+      "Mining, oilfield & remote site deployment",
+      "Distributor stocking & rental fleets",
     ],
   },
   {
