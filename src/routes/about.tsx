@@ -28,7 +28,7 @@ function AboutPage() {
 
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
-          <img src={products[1].image} alt="Factory" className="rounded-2xl shadow-elegant" />
+          <img src={siteImages.factory} alt="LONGLI factory and assembly base" className="rounded-2xl shadow-elegant w-full h-[460px] object-cover" />
           <div>
             <p className="text-sm font-semibold text-primary uppercase tracking-widest">Our Story</p>
             <h2 className="mt-3 text-4xl font-bold text-balance">15+ years focused on engineering machinery export</h2>

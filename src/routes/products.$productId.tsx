@@ -156,7 +156,7 @@ function ProductDetail() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {related.map(r => (
               <Link key={r.id} to="/products/$productId" params={{ productId: r.id }} className="group bg-card rounded-xl border overflow-hidden hover:shadow-elegant hover:-translate-y-1 transition-all">
-                <div className="aspect-[4/3] overflow-hidden bg-muted"><img src={r.image} alt={r.name} className="w-full h-full object-cover group-hover:scale-105 transition duration-700" /></div>
+                <div className="aspect-[4/3] overflow-hidden bg-muted"><ProductImage src={r.image} alt={r.name} className="w-full h-full" imgClassName="object-cover group-hover:scale-105 transition duration-700" /></div>
                 <div className="p-5">
                   <div className="text-xs text-primary font-semibold uppercase tracking-wider">{r.category}</div>
                   <h3 className="mt-2 font-bold">{r.name}</h3>
