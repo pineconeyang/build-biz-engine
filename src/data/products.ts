@@ -46,6 +46,12 @@ import lpm50Angle2 from "@/assets/products/lpm50hp-angle-2.png";
 import lpm50Open1 from "@/assets/products/lpm50hp-open-1.png";
 import lpm50Open2 from "@/assets/products/lpm50hp-open-2.png";
 
+import lpm50NewMain from "@/assets/products/lpm50hp-new-main.jpg";
+import lpm50NewAngle from "@/assets/products/lpm50hp-new-angle.jpg";
+import lpm50NewOpenFront from "@/assets/products/lpm50hp-new-open-front.jpg";
+import lpm50NewOpenAirend from "@/assets/products/lpm50hp-new-open-airend.jpg";
+import lpm50NewOpenElectrical from "@/assets/products/lpm50hp-new-open-electrical.jpg";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
@@ -275,6 +281,58 @@ export const products: Product[] = [
       "Pneumatic tools, sandblasting & assembly lines",
       "Distributor stocking & rental fleets",
       "Overseas EPC project standard configuration",
+    ],
+  },
+  {
+    id: "lpm50hp-dhh37bm-pmvsd",
+    name: "LPM50HP / DHH37BM PM-VSD Screw Air Compressor (New Generation)",
+    category: "Screw Compressor",
+    tagline: "50HP / 37 kW new-generation permanent magnet VSD screw compressor — energy-saving, smart-controlled, factory-direct.",
+    description:
+      "The new-generation LPM50HP (DHH37BM PM-VSD series) is a 50-horsepower permanent magnet variable speed screw air compressor engineered for plants that demand stable pressure, lower energy bills and quiet operation. The integrated industrial PM inverter and high-efficiency PM motor continuously match air output to real-time demand — typically saving 25–40% energy versus fixed-speed units. A premium twin-screw airend, large vertical oil/air separator, smart electrical cabinet and centralized HMI controller deliver consistent performance for laser cutting, electronics, packaging, textiles and general manufacturing.",
+    image: lpm50NewMain,
+    gallery: [
+      lpm50NewMain,
+      lpm50NewAngle,
+      lpm50NewOpenFront,
+      lpm50NewOpenAirend,
+      lpm50NewOpenElectrical,
+    ],
+    features: [
+      "Permanent magnet (PM) motor + VSD inverter — 25–40% energy saving",
+      "Industrial PM drive, stable across full speed range",
+      "Premium twin-screw airend, low-speed direct coupling",
+      "Large vertical oil/air separator with high-efficiency element",
+      "Independent electrical cabinet — clean wiring, easy service",
+      "Smart PLC controller with full-color HMI, multi-language",
+      "Soft start — no current surge, friendly to plant grid",
+      "Heavy-gauge steel enclosure with acoustic foam — low noise",
+      "Wide-open service doors for fast filter & oil maintenance",
+      "Forklift-ready base frame, export wooden case packing",
+    ],
+    specs: [
+      { label: "Model", value: "LPM50HP / DHH37BM (PM-VSD)" },
+      { label: "Motor Type", value: "Permanent Magnet (PM), IE4-class efficiency" },
+      { label: "Motor Power", value: "37 kW (50 HP)" },
+      { label: "Control", value: "VSD — variable speed drive (industrial PM inverter)" },
+      { label: "Working Pressure", value: "7 / 8 / 10 / 13 bar (adjustable)" },
+      { label: "Air Delivery", value: "6.7 / 6.3 / 5.4 / 4.3 m³/min" },
+      { label: "Drive", value: "Direct drive (1:1 coupling)" },
+      { label: "Cooling", value: "Air-cooled" },
+      { label: "Noise Level", value: "≤ 70 dB(A) @ 1 m" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet Pipe", value: "G 1-1/2\"" },
+      { label: "Dimensions (L×W×H)", value: "1500 × 1000 × 1280 mm" },
+      { label: "Weight", value: "≈ 760 kg" },
+      { label: "Warranty", value: "12 months main unit / 24 months airend" },
+    ],
+    applications: [
+      "Laser cutting & sheet metal workshops",
+      "Electronics & precision assembly",
+      "Packaging & printing lines",
+      "Textile & garment factories",
+      "General manufacturing with variable air demand",
+      "Energy-saving retrofit & overseas EPC projects",
     ],
   },
   {
