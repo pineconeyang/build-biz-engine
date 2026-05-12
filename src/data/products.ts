@@ -52,6 +52,14 @@ import lpm50NewOpenFront from "@/assets/products/lpm50hp-new-open-front.jpg";
 import lpm50NewOpenAirend from "@/assets/products/lpm50hp-new-open-airend.jpg";
 import lpm50NewOpenElectrical from "@/assets/products/lpm50hp-new-open-electrical.jpg";
 
+import lpm75Main from "@/assets/products/lpm75hp-main.jpg";
+import lpm75Angle from "@/assets/products/lpm75hp-angle.jpg";
+import lpm75OpenSeparator from "@/assets/products/lpm75hp-open-separator.jpg";
+import lpm75OpenAirend from "@/assets/products/lpm75hp-open-airend.jpg";
+import lpm75SideTank from "@/assets/products/lpm75hp-side-tank.jpg";
+import lpm75Internal from "@/assets/products/lpm75hp-internal.jpg";
+import lpm75RearVent from "@/assets/products/lpm75hp-rear-vent.jpg";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
@@ -333,6 +341,58 @@ export const products: Product[] = [
       "Textile & garment factories",
       "General manufacturing with variable air demand",
       "Energy-saving retrofit & overseas EPC projects",
+    ],
+  },
+  {
+    id: "lpm75hp-dm75a",
+    name: "LPM75HP / DM-75A Stationary Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "75HP / 55 kW heavy-duty stationary screw air compressor — high air delivery, robust frame, export-ready.",
+    description:
+      "The LPM75HP (DM-75A series) is a 75-horsepower stationary screw air compressor engineered for medium-to-large factories and overseas industrial projects. Built on a heavy-duty welded steel frame with a premium twin-screw airend, IE3 high-efficiency 55 kW motor, large vertical oil/air separator and PLC HMI controller, it delivers stable, high-volume compressed air for laser cutting, sandblasting, mining support, woodworking, textile and general manufacturing. Wide service openings and a forklift-ready base make installation, maintenance and shipping straightforward.",
+    image: lpm75Main,
+    gallery: [
+      lpm75Main,
+      lpm75Angle,
+      lpm75OpenSeparator,
+      lpm75OpenAirend,
+      lpm75SideTank,
+      lpm75Internal,
+      lpm75RearVent,
+    ],
+    features: [
+      "Premium twin-screw airend, low-speed direct drive",
+      "IE3 high-efficiency 55 kW main motor",
+      "Large vertical oil/air separator with high-efficiency element",
+      "Heavy-duty radiator — stable performance in hot climates",
+      "PLC touchscreen controller, multi-language UI, emergency stop",
+      "Independent air-intake & dual oil filters — long service life",
+      "Heavy-gauge welded steel frame with anti-vibration mounts",
+      "Large mesh ventilation panels — efficient heat dissipation",
+      "Wide-open maintenance doors for fast filter & oil service",
+      "Forklift-ready base frame, export wooden case packing",
+    ],
+    specs: [
+      { label: "Model", value: "LPM75HP / DM-75A" },
+      { label: "Motor Power", value: "55 kW (75 HP)" },
+      { label: "Working Pressure", value: "7 / 8 / 10 / 13 bar" },
+      { label: "Air Delivery", value: "10.3 / 9.7 / 8.6 / 7.0 m³/min" },
+      { label: "Drive", value: "Direct drive (1:1 coupling)" },
+      { label: "Cooling", value: "Air-cooled" },
+      { label: "Noise Level", value: "≤ 75 dB(A) @ 1 m" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet Pipe", value: "G 2\"" },
+      { label: "Dimensions (L×W×H)", value: "1750 × 1180 × 1450 mm" },
+      { label: "Weight", value: "≈ 1,050 kg" },
+      { label: "Warranty", value: "12 months main unit" },
+    ],
+    applications: [
+      "Laser cutting & heavy sheet metal workshops",
+      "Sandblasting, painting & surface treatment",
+      "Mining, drilling & infrastructure support",
+      "Woodworking & furniture production",
+      "Textile, packaging & printing factories",
+      "Overseas EPC project standard configuration",
     ],
   },
   {
