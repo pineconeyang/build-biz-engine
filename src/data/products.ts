@@ -20,6 +20,12 @@ import lf250Fans2 from "@/assets/products/lf250hp-fans-2.jpg";
 import lf250Separator from "@/assets/products/lf250hp-separator.jpg";
 import lf250Motor from "@/assets/products/lf250hp-motor.jpg";
 
+import lpm20Poster1 from "@/assets/products/lpm20hp-poster-MVI_0051.jpg";
+import lpm20Poster2 from "@/assets/products/lpm20hp-poster-MVI_0052.jpg";
+import lpm20Poster3 from "@/assets/products/lpm20hp-poster-MVI_0053.jpg";
+import lpm20Poster4 from "@/assets/products/lpm20hp-poster-MVI_0055.jpg";
+import lpm20Poster5 from "@/assets/products/lpm20hp-poster-MVI_0067.jpg";
+
 export type MediaItem =
   | { type: "image"; src: string }
   | { type: "video"; src: string; poster?: string };
