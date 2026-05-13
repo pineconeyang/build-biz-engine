@@ -106,6 +106,8 @@ import lpm7Open from "@/assets/products/lpm7-open.jpg";
 import lpm7Motor from "@/assets/products/lpm7-motor.jpg";
 import lpm20aOpen from "@/assets/products/lpm20a-open.jpg";
 import lpm20aRear from "@/assets/products/lpm20a-rear.jpg";
+import lpm30aFront from "@/assets/products/lpm30a-front.jpg";
+import lpm30aOpen from "@/assets/products/lpm30a-open.jpg";
 import hansLaserMain from "@/assets/products/hans-laser-custom-main.png";
 import hansLaser1 from "@/assets/products/hans-laser-custom-1.jpg";
 import hansLaser2 from "@/assets/products/hans-laser-custom-2.jpg";
@@ -246,6 +248,61 @@ export const products: Product[] = [
       "Dental, medical and laboratory equipment",
       "Auto repair, tire service and pneumatic tooling",
       "Distributor stocking for entry-mid VSD market",
+    ],
+  },
+  {
+    id: "lpm30a-pm-vsd-compressor",
+    name: "LPM30A Permanent Magnet VSD Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "22 kW / 30HP PM VSD screw compressor — direct-drive, compact, energy-saving.",
+    description:
+      "The LPM30A is a 22 kW (30HP) permanent magnet variable-frequency screw air compressor designed for workshops and production lines that need stable air supply, lower power consumption and reliable daily operation. It combines a high-efficiency PM motor with direct-drive transmission and a built-in VFD for soft start, reduced inrush current and a 40–100% flow adjustment range. With enclosed low-noise construction, microcomputer control and full safety protections, the LPM30A is a practical plug-and-play solution for laser cutting, fabrication, packaging and general industrial use.",
+    image: lpm30aFront,
+    gallery: [lpm30aFront, lpm30aOpen],
+    features: [
+      "Permanent magnet variable-speed drive for lower energy consumption",
+      "Direct-drive transmission — no belt losses, less maintenance",
+      "Wide flow turn-down 40–100% to match real air demand",
+      "Soft-start inverter control — reduced current surge and smoother operation",
+      "IP65 / Class F motor protection for demanding workshop conditions",
+      "Microcomputer controller — automatic control, status display and data storage",
+      "Comprehensive safety protections — high temp, high pressure, blockage, overcurrent, phase loss, reverse phase, voltage instability",
+      "High-efficiency air filter with 99.95% filtration efficiency",
+      "Premium oil filter and oil separator with low carryover below 3 PPM",
+      "Compact enclosed cabinet with low noise at 74 ± 3 dB(A)",
+      "Plug & play installation with G1 air outlet",
+    ],
+    specs: [
+      { label: "Model", value: "LPM30A" },
+      { label: "Motor Power", value: "22 kW (30 HP)" },
+      { label: "Type", value: "Permanent magnet VSD screw compressor, single-stage" },
+      { label: "Working Pressure", value: "0.7 / 0.8 / 1.0 / 1.3 MPa (7 / 8 / 10 / 13 bar)" },
+      { label: "Air Delivery (FAD)", value: "3.7 / 3.6 / 3.2 / 2.8 m³/min (vs. pressure)" },
+      { label: "Flow Adjustment", value: "40–100% (VFD turn-down)" },
+      { label: "Drive", value: "Direct coupling" },
+      { label: "Startup", value: "Variable frequency soft start" },
+      { label: "Motor Model", value: "LLM22" },
+      { label: "Rated Voltage", value: "380V / 50Hz, 3Ph (other voltages on request)" },
+      { label: "Rated Current", value: "40.6 A / SF1.2" },
+      { label: "Motor Speed", value: "3000 rpm" },
+      { label: "Motor Protection / Insulation", value: "IP65 / Class F" },
+      { label: "Cooling", value: "Air-cooled, fan air volume 4500 m³/h, fan 0.45 kW" },
+      { label: "Exhaust Temperature", value: "≤ Ambient + 15°C (typ. 80°C)" },
+      { label: "Noise Level", value: "74 ± 3 dB(A) at 1 m" },
+      { label: "Lubricating Oil", value: "18 L" },
+      { label: "Air Outlet", value: "G1" },
+      { label: "Dimensions (L×W×H)", value: "1330 × 830 × 1265 mm" },
+      { label: "Weight", value: "410 kg" },
+      { label: "Ambient Conditions", value: "2–45°C, RH < 80%" },
+      { label: "Warranty", value: "12 months main components" },
+    ],
+    applications: [
+      "Laser cutting and sheet metal fabrication",
+      "General manufacturing and assembly lines",
+      "Packaging, printing and plastics processing",
+      "Auto repair and pneumatic tool supply",
+      "Electronics and light industrial workshops",
+      "Distributor stocking for mid-size VSD compressor demand",
     ],
   },
   {
