@@ -101,6 +101,9 @@ import dm50aasSystem1 from "@/assets/products/dm50aas-system-1.jpg";
 import dm50aasSystem2 from "@/assets/products/dm50aas-system-2.jpg";
 import dm50aasSystemRear from "@/assets/products/dm50aas-system-rear.jpg";
 import dmzy30aMain from "@/assets/products/dmzy30a-main.jpg";
+import hansLaserMain from "@/assets/products/hans-laser-custom-main.png";
+import hansLaser1 from "@/assets/products/hans-laser-custom-1.jpg";
+import hansLaser2 from "@/assets/products/hans-laser-custom-2.jpg";
 
 export type MediaItem =
   | { type: "image"; src: string }
@@ -746,6 +749,51 @@ export const products: Product[] = [
       "Overseas EPC and turnkey project supply",
       "Factory upgrades needing clean compressed air",
       "Dealer stocking and rental fleets",
+      "Sites requiring fast installation and compact layout",
+    ],
+  },
+  {
+    id: "hans-laser-custom-skid-system",
+    name: "Han's Laser Custom Skid-Mounted Integrated Air System",
+    category: "Skid-Mounted Integrated System",
+    tagline: "OEM custom skid-mounted air station — engineered for Han's Laser cutting machines.",
+    description:
+      "Custom-engineered skid-mounted compressed air system developed as an OEM solution for Han's Laser (大族激光) fiber laser cutting equipment. The package integrates a screw air compressor, vertical air receiver tank, refrigerated dryer and multi-stage precision filters on one heavy-duty welded steel skid — pre-piped, pre-wired and factory pressure-tested. Built to match Han's Laser's specification for clean, dry, stable compressed air, the unit ships as a single plug-and-play air station that drops in next to the laser cutting machine and connects with one outlet pipe and one power cable.",
+    image: hansLaserMain,
+    gallery: [hansLaserMain, hansLaser1, hansLaser2],
+    features: [
+      "OEM custom design — engineered to Han's Laser cutting machine specification",
+      "All-in-one skid layout — compressor, tank, dryer and filters in one system",
+      "Factory pre-piped, pre-wired and pressure-tested — drop-in installation",
+      "Screw air compressor with stable continuous output for fiber laser cutting",
+      "Vertical air receiver tank for pressure buffering and flow stability",
+      "Refrigerated air dryer for ISO 8573-1 Class 4 dry compressed air",
+      "Multi-stage precision line filters for clean cutting-grade air quality",
+      "Independent dryer and filter section for cleaner service access",
+      "Heavy-duty welded steel skid base — forklift and container friendly",
+      "Compact footprint vs. discrete component installation",
+      "Repeat OEM platform — proven in Han's Laser supply projects",
+    ],
+    specs: [
+      { label: "System Model", value: "Han's Laser Custom Skid Air Station" },
+      { label: "System Type", value: "Skid-mounted all-in-one air station (OEM custom)" },
+      { label: "Compressor", value: "Screw air compressor, power matched to laser model" },
+      { label: "Working Pressure", value: "Configured per Han's Laser spec (typ. 10–13 bar)" },
+      { label: "Air Receiver", value: "Vertical storage tank, integrated on skid" },
+      { label: "Dryer", value: "Refrigerated air dryer, ISO 8573-1 Class 4" },
+      { label: "Filtration", value: "Precision multi-stage line filters" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Installation", value: "Plug & play skid-mounted package" },
+      { label: "Customization", value: "OEM color, layout and specification supported" },
+      { label: "Packing", value: "Export-ready skid / wooden case solution" },
+      { label: "Warranty", value: "12 months main components" },
+    ],
+    applications: [
+      "Han's Laser fiber laser cutting machines (OEM supply)",
+      "Sheet metal fabrication workshops",
+      "Precision metal processing lines",
+      "Laser cutting machine OEM packaged supply",
+      "Factory upgrades needing dedicated clean air for laser cutting",
       "Sites requiring fast installation and compact layout",
     ],
   },
