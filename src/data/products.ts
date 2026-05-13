@@ -104,6 +104,8 @@ import dmzy30aMain from "@/assets/products/dmzy30a-main.jpg";
 import lpm7Front from "@/assets/products/lpm7-front.jpg";
 import lpm7Open from "@/assets/products/lpm7-open.jpg";
 import lpm7Motor from "@/assets/products/lpm7-motor.jpg";
+import lpm20aOpen from "@/assets/products/lpm20a-open.jpg";
+import lpm20aRear from "@/assets/products/lpm20a-rear.jpg";
 import hansLaserMain from "@/assets/products/hans-laser-custom-main.png";
 import hansLaser1 from "@/assets/products/hans-laser-custom-1.jpg";
 import hansLaser2 from "@/assets/products/hans-laser-custom-2.jpg";
@@ -189,6 +191,61 @@ export const products: Product[] = [
       "Light packaging, printing and electronics assembly",
       "Auto repair shops and tire service",
       "Distributor stocking for entry-level VSD market",
+    ],
+  },
+  {
+    id: "lpm20a-pm-vsd-compressor",
+    name: "LPM20A Permanent Magnet VSD Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "15 kW / 20HP PM VSD screw compressor — direct-drive, low-noise, energy-saving.",
+    description:
+      "The LPM20A is a 15 kW (20HP) permanent magnet variable-frequency screw air compressor built for small to medium workshops, laser cutting shops, packaging lines and general manufacturing. A high-efficiency PM synchronous motor is directly coupled to the screw airend (no belt losses) and driven by a built-in VFD for soft start, low inrush current and a wide 40–100% flow turn-down. Multi-stage filtration, IP65/Class F motor protection and a microcomputer controller with full safety protections make this a reliable, low-maintenance, energy-saving plug-and-play unit.",
+    image: lpm20aRear,
+    gallery: [lpm20aRear, lpm20aOpen],
+    features: [
+      "Permanent magnet synchronous motor — high efficiency across the speed range",
+      "Built-in variable frequency drive — soft start, no current surge",
+      "Direct-drive coupling — no belt losses, low maintenance",
+      "Wide flow turn-down 40–100% to match real demand",
+      "IP65 / Class F motor protection — dust and moisture resistant",
+      "Microcomputer controller — auto control, status display, data storage",
+      "Comprehensive safety protections — high temp, high pressure, overcurrent, phase loss, reverse phase, voltage instability",
+      "High-efficiency air filter (99.95% per ISO 5011)",
+      "Premium oil filter (>20μm, 99.99%) and oil separator (<3 PPM per GB/T 13277.2)",
+      "Compact enclosed cabinet with low noise (73 ± 3 dB(A) at 1 m)",
+      "Plug & play — single power connection and G3/4\" air outlet",
+    ],
+    specs: [
+      { label: "Model", value: "LPM20A" },
+      { label: "Motor Power", value: "15 kW (20 HP)" },
+      { label: "Type", value: "Permanent magnet VSD screw compressor, single-stage" },
+      { label: "Working Pressure", value: "0.7 / 0.8 / 1.0 / 1.3 MPa (7 / 8 / 10 / 13 bar)" },
+      { label: "Air Delivery (FAD)", value: "2.4 / 2.3 / 2.0 / 1.6 m³/min (vs. pressure)" },
+      { label: "Flow Adjustment", value: "40–100% (VFD turn-down)" },
+      { label: "Drive", value: "Direct coupling" },
+      { label: "Startup", value: "Variable frequency soft start" },
+      { label: "Airend / Motor", value: "DHH15 airend, PM synchronous motor" },
+      { label: "Rated Voltage", value: "380V / 50Hz, 3Ph (other voltages on request)" },
+      { label: "Rated Current", value: "28.4 A / SF1.2" },
+      { label: "Motor Speed", value: "3600 rpm" },
+      { label: "Motor Protection / Insulation", value: "IP65 / Class F" },
+      { label: "Cooling", value: "Air-cooled, fan air volume 3000 m³/h, fan 0.25 kW" },
+      { label: "Exhaust Temperature", value: "≤ Ambient + 15°C (typ. 80°C)" },
+      { label: "Noise Level", value: "73 ± 3 dB(A) at 1 m" },
+      { label: "Lubricating Oil", value: "10 L" },
+      { label: "Air Outlet", value: "G3/4\"" },
+      { label: "Dimensions (L×W×H)", value: "1062 × 690 × 1000 mm" },
+      { label: "Weight", value: "236 kg" },
+      { label: "Ambient Conditions", value: "2–45°C, RH < 80%" },
+      { label: "Warranty", value: "12 months main components" },
+    ],
+    applications: [
+      "Small to medium workshops and production lines",
+      "Laser cutting and sheet metal fabrication",
+      "Packaging, printing and electronics assembly",
+      "Dental, medical and laboratory equipment",
+      "Auto repair, tire service and pneumatic tooling",
+      "Distributor stocking for entry-mid VSD market",
     ],
   },
   {
