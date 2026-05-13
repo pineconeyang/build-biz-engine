@@ -101,6 +101,9 @@ import dm50aasSystem1 from "@/assets/products/dm50aas-system-1.jpg";
 import dm50aasSystem2 from "@/assets/products/dm50aas-system-2.jpg";
 import dm50aasSystemRear from "@/assets/products/dm50aas-system-rear.jpg";
 import dmzy30aMain from "@/assets/products/dmzy30a-main.jpg";
+import lpm7Front from "@/assets/products/lpm7-front.jpg";
+import lpm7Open from "@/assets/products/lpm7-open.jpg";
+import lpm7Motor from "@/assets/products/lpm7-motor.jpg";
 import hansLaserMain from "@/assets/products/hans-laser-custom-main.png";
 import hansLaser1 from "@/assets/products/hans-laser-custom-1.jpg";
 import hansLaser2 from "@/assets/products/hans-laser-custom-2.jpg";
@@ -134,6 +137,60 @@ export const siteImages = {
 };
 
 export const products: Product[] = [
+  {
+    id: "lpm-7-pm-vsd-compressor",
+    name: "LPM-7 Permanent Magnet VSD Screw Air Compressor",
+    category: "Screw Compressor",
+    tagline: "7.5 kW / 10HP PM VSD screw compressor — compact, energy-saving, ideal for small workshops.",
+    description:
+      "The LPM-7 is a compact 7.5 kW (10HP) permanent magnet variable-frequency screw air compressor designed for small workshops, laboratories and light industrial users who need a quiet, efficient and stable compressed air source. It pairs a high-efficiency PM synchronous motor with a directly coupled screw airend and a built-in VFD for smooth soft-start, wide flow turn-down (40–100%) and low energy consumption at part load. Multi-stage filtration, comprehensive safety protections and microcomputer control make it a true plug-and-play unit — connect power and the G3/4\" outlet and the machine is ready to run.",
+    image: lpm7Front,
+    gallery: [lpm7Front, lpm7Open, lpm7Motor],
+    features: [
+      "Permanent magnet synchronous motor — high efficiency across the speed range",
+      "Built-in variable frequency drive — soft start, no current surge",
+      "Direct-drive coupling — no belt losses, low maintenance",
+      "Wide flow turn-down 40–100% to match real demand",
+      "Compact enclosed cabinet for low noise and small footprint",
+      "Microcomputer controller — auto control, status display, data storage",
+      "Comprehensive safety protections — high temp, high pressure, overcurrent, phase loss, reverse phase, voltage instability",
+      "High-efficiency air filter (99.95% per ISO 5011)",
+      "Premium oil filter (>20μm, 99.99%) and oil separator (<3 PPM per GB/T 13277.2)",
+      "IP23 / Class F insulation motor protection",
+      "Plug & play — single power connection and G3/4\" air outlet",
+    ],
+    specs: [
+      { label: "Model", value: "LPM-7" },
+      { label: "Motor Power", value: "7.5 kW (10 HP)" },
+      { label: "Type", value: "Permanent magnet VSD screw compressor, single-stage" },
+      { label: "Working Pressure", value: "0.7 / 0.8 / 1.0 / 1.3 MPa (7 / 8 / 10 / 13 bar)" },
+      { label: "Air Delivery (FAD)", value: "1.3 / 1.2 / 1.0 / 0.85 m³/min (vs. pressure)" },
+      { label: "Flow Adjustment", value: "40–100% (VFD turn-down)" },
+      { label: "Drive", value: "Direct coupling" },
+      { label: "Startup", value: "Variable frequency soft start" },
+      { label: "Rated Voltage", value: "380V / 50Hz, 3Ph (other voltages on request)" },
+      { label: "Rated Current", value: "12.92 A / SF1.2" },
+      { label: "Motor Speed", value: "3600 rpm (range 1200–3600 rpm)" },
+      { label: "Motor Protection / Insulation", value: "IP23 / Class F" },
+      { label: "Cooling", value: "Air-cooled, fan air volume 1500 m³/h" },
+      { label: "Exhaust Temperature", value: "≤ Ambient + 15°C (typ. 80°C)" },
+      { label: "Noise Level", value: "63 ± 3 dB(A) at 1 m" },
+      { label: "Lubricating Oil", value: "8 L" },
+      { label: "Air Outlet", value: "G3/4\"" },
+      { label: "Dimensions (L×W×H)", value: "806 × 590 × 949 mm" },
+      { label: "Weight", value: "190 kg" },
+      { label: "Ambient Conditions", value: "2–45°C, RH < 80%" },
+      { label: "Warranty", value: "12 months main components" },
+    ],
+    applications: [
+      "Small workshops and prototype shops",
+      "Laboratories and R&D facilities",
+      "Dental clinics and small medical equipment",
+      "Light packaging, printing and electronics assembly",
+      "Auto repair shops and tire service",
+      "Distributor stocking for entry-level VSD market",
+    ],
+  },
   {
     id: "lpm20hp-pm-vsd-compressor",
     name: "LPM20HP Permanent Magnet VSD Screw Air Compressor",
