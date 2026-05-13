@@ -73,14 +73,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Nantong Longli Machinery Euqiment Co., Ltd." },
+      { name: "description", content: "Nantong Longli Machinery Euqiment Co., Ltd." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Nantong Longli Machinery Euqiment Co., Ltd." },
+      { property: "og:description", content: "Nantong Longli Machinery Euqiment Co., Ltd." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Nantong Longli Machinery Euqiment Co., Ltd." },
+      { name: "twitter:description", content: "Nantong Longli Machinery Euqiment Co., Ltd." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8dfa8a53-79d6-4feb-8a9b-8e564e2826cb/id-preview-abaf4a07--95936b10-80e4-4053-badd-4a3319335f73.lovable.app-1778630393612.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8dfa8a53-79d6-4feb-8a9b-8e564e2826cb/id-preview-abaf4a07--95936b10-80e4-4053-badd-4a3319335f73.lovable.app-1778630393612.png" },
     ],
     links: [
       {
