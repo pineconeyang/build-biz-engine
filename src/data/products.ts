@@ -100,6 +100,7 @@ import dm30LaserAirend from "@/assets/products/dm30a-laser-airend.jpg";
 import dm50aasSystem1 from "@/assets/products/dm50aas-system-1.jpg";
 import dm50aasSystem2 from "@/assets/products/dm50aas-system-2.jpg";
 import dm50aasSystemRear from "@/assets/products/dm50aas-system-rear.jpg";
+import dmzy30aMain from "@/assets/products/dmzy30a-main.jpg";
 
 export type MediaItem =
   | { type: "image"; src: string }
@@ -699,6 +700,52 @@ export const products: Product[] = [
       "Precision metal processing lines",
       "Factory upgrades needing clean compressed air",
       "Dealer projects and overseas packaged supply",
+      "Sites requiring fast installation and compact layout",
+    ],
+  },
+  {
+    id: "dmzy30a-skid-mounted-system",
+    name: "DMZY-30A Skid-Mounted Integrated Air Compressor System",
+    category: "Skid-Mounted Integrated System",
+    tagline: "30HP PM VSD skid-mounted air station — compressor + tank + dryer + filters in one package.",
+    description:
+      "The DMZY-30A is a 30HP skid-mounted integrated compressed air system combining a permanent-magnet variable-speed screw air compressor, vertical air receiver, refrigerated dryer and multi-stage line filters on one heavy-duty welded steel skid. Factory pre-piped, pre-wired and pressure-tested, it ships as a single plug-and-play air station — saving floor space, reducing installation time and giving overseas distributors and end-users a clean, export-ready package for laser cutting, general manufacturing and packaged project supply.",
+    image: dmzy30aMain,
+    gallery: [dmzy30aMain],
+    features: [
+      "All-in-one skid layout — compressor, tank, dryer and filters in one system",
+      "30HP / 22 kW permanent-magnet VSD screw airend for energy savings",
+      "Factory pre-piped, pre-wired and pressure-tested — fast commissioning",
+      "Vertical air receiver tank for pressure buffering and stable flow",
+      "Refrigerated air dryer for ISO 8573-1 Class 4 dry compressed air",
+      "Dual precision line filters (1µm + 0.01µm) for clean air quality",
+      "Heavy-duty welded steel skid base — forklift and container friendly",
+      "PLC controller with HMI touchscreen for easy operation",
+      "Compact footprint vs. discrete component installation",
+      "Independent dryer and filter section for cleaner service access",
+      "Export-ready packaging for distributors and EPC projects",
+    ],
+    specs: [
+      { label: "System Model", value: "DMZY-30A Integrated Air Station" },
+      { label: "Compressor", value: "DMZY-30A PM VSD screw, 22 kW (30 HP)" },
+      { label: "System Type", value: "Skid-mounted all-in-one air station" },
+      { label: "Working Pressure", value: "7 / 8 / 10 bar (selectable)" },
+      { label: "Air Delivery (FAD)", value: "Approx. 3.1–3.8 m³/min" },
+      { label: "Air Receiver", value: "Vertical storage tank, integrated on skid" },
+      { label: "Dryer", value: "Refrigerated air dryer, ISO 8573-1 Class 4" },
+      { label: "Filtration", value: "Precision line filters 1µm + 0.01µm" },
+      { label: "Voltage", value: "380V / 400V / 415V / 440V — 50/60Hz, 3Ph" },
+      { label: "Outlet", value: "G1 clean-air outlet, ready to connect" },
+      { label: "Installation", value: "Plug & play skid-mounted package" },
+      { label: "Packing", value: "Export-ready skid / wooden case solution" },
+      { label: "Warranty", value: "12 months main components" },
+    ],
+    applications: [
+      "Fiber laser cutting workshops",
+      "General manufacturing and assembly lines",
+      "Overseas EPC and turnkey project supply",
+      "Factory upgrades needing clean compressed air",
+      "Dealer stocking and rental fleets",
       "Sites requiring fast installation and compact layout",
     ],
   },
