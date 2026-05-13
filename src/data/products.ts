@@ -371,6 +371,7 @@ export const products: Product[] = [
     ],
   },
   {
+    id: "lpm20hp-pm-vsd-compressor",
     name: "LPM20HP Permanent Magnet VSD Screw Air Compressor",
     category: "Screw Compressor",
     tagline: "20HP / 15 kW permanent magnet variable-speed screw compressor — energy-saving and whisper-quiet.",
