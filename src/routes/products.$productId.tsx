@@ -180,7 +180,7 @@ function ProductGallery({ product }: { product: import("@/data/products").Produc
             className="w-full aspect-[4/3] object-cover bg-black"
           />
         ) : (
-          <ProductImage src={main?.src} alt={product.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
+          <ProductImage src={main?.src} alt={product.name} className="w-full aspect-[4/3] flex items-center justify-center bg-white" imgClassName="max-w-full max-h-full object-contain" />
         )}
       </div>
       {items.length > 1 && (
