@@ -1,13 +1,16 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import logoAsset from "@/assets/longli-logo.jpg.asset.json";
 
 export function Footer() {
   return (
     <footer className="bg-[oklch(0.18_0.04_250)] text-[oklch(0.92_0.01_250)] mt-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-9 h-9 rounded-md bg-gradient-accent grid place-items-center font-bold">L</div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="bg-white rounded-md p-1.5">
+              <img src={logoAsset.url} alt="LONGLI" className="h-10 w-auto object-contain" />
+            </div>
             <span className="font-bold text-lg">LONGLI Machinery</span>
           </div>
           <p className="text-sm text-white/70 leading-relaxed">
