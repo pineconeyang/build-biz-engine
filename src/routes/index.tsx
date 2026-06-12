@@ -103,7 +103,7 @@ function Home() {
             {products.slice(0, 6).map(p => (
               <Link key={p.id} to="/products/$productId" params={{ productId: p.id }} className="group bg-card rounded-xl overflow-hidden border hover:shadow-elegant transition-all hover:-translate-y-1">
                 <div className="aspect-[4/3] overflow-hidden bg-muted">
-                  <ProductImage src={p.image} alt={p.name} className="w-full h-full" imgClassName="object-cover group-hover:scale-105 transition duration-700" />
+                  <ProductImage src={p.image} alt={p.name} className="w-full h-full flex items-center justify-center bg-white" imgClassName="max-w-full max-h-full object-contain group-hover:scale-105 transition duration-700" />
                 </div>
                 <div className="p-6">
                   <div className="text-xs text-primary font-semibold uppercase tracking-wider">{p.category}</div>
