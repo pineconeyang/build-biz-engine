@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight, ArrowRight, ShieldCheck } from "lucide-react";
 import { banners } from "@/data/products";
-import logoAsset from "@/assets/longli-logo.jpg.asset.json";
 
 const slides = [
   {
@@ -39,11 +38,6 @@ export function HeroCarousel() {
         >
           <img src={b} alt="LONGLI industrial machinery" className="w-full h-full object-cover scale-125 animate-slide-fade" />
           <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.18_0.08_250/0.92)] via-[oklch(0.25_0.1_250/0.7)] to-transparent" />
-          {/* LONGLI brand watermark on hero — covers any third-party branding on source photos */}
-          <div className="absolute top-6 right-6 md:top-8 md:right-10 z-10 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-xl flex items-center gap-2 border border-white">
-            <img src={logoAsset.url} alt="LONGLI" className="h-8 md:h-10 w-auto object-contain" />
-            <span className="text-sm md:text-base font-bold tracking-widest text-[#1e3a8a]">LONGLI</span>
-          </div>
         </div>
       ))}
 
