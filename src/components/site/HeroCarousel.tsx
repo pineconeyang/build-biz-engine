@@ -36,7 +36,7 @@ export function HeroCarousel() {
           key={idx}
           className={`absolute inset-0 transition-opacity duration-1000 ${idx === i ? "opacity-100" : "opacity-0"}`}
         >
-          <img src={b} alt="LONGLI industrial machinery" className="w-full h-full object-contain bg-[oklch(0.18_0.08_250)] animate-slide-fade" />
+          <img src={b} alt="Industrial machinery" className="w-full h-full object-cover scale-125 animate-slide-fade" />
           <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.18_0.08_250/0.92)] via-[oklch(0.25_0.1_250/0.7)] to-transparent" />
         </div>
       ))}
