@@ -181,7 +181,7 @@ function ProductsPage() {
                   {list.map(p => (
                     <Link key={p.id} to="/products/$productId" params={{ productId: p.id }} className="group bg-card rounded-xl border overflow-hidden hover:shadow-elegant hover:-translate-y-1 transition-all">
                       <div className="aspect-[4/3] overflow-hidden bg-muted">
-                        <ProductImage src={p.image} alt={p.name} className="w-full h-full" imgClassName="object-cover group-hover:scale-105 transition duration-700" />
+                        <ProductImage src={p.image} alt={p.name} className="w-full h-full bg-white" imgClassName="object-contain p-4 group-hover:scale-105 transition duration-700" />
                       </div>
                       <div className="p-5">
                         <div className="text-xs text-primary font-semibold uppercase tracking-wider">{p.category}</div>
