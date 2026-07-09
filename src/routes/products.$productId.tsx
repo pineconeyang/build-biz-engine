@@ -145,7 +145,7 @@ function ProductDetail() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {related.map(r => (
               <Link key={r.id} to="/products/$productId" params={{ productId: r.id }} className="group bg-card rounded-xl border overflow-hidden hover:shadow-elegant hover:-translate-y-1 transition-all">
-                <div className="aspect-[4/3] overflow-hidden bg-white"><ProductImage src={r.image} alt={r.name} className="w-full h-full" imgClassName="object-contain p-4 group-hover:scale-105 transition duration-700" /></div>
+                <div className="aspect-[4/3] overflow-hidden bg-muted"><ProductImage src={r.image} alt={r.name} className="w-full h-full" imgClassName="object-cover group-hover:scale-105 transition duration-700" /></div>
                 <div className="p-5">
                   <div className="text-xs text-primary font-semibold uppercase tracking-wider">{r.category}</div>
                   <h3 className="mt-2 font-bold">{r.name}</h3>
@@ -177,10 +177,10 @@ function ProductGallery({ product }: { product: import("@/data/products").Produc
             poster={main.poster}
             controls
             playsInline
-            className="w-full aspect-[4/3] object-contain bg-black"
+            className="w-full aspect-[4/3] object-cover bg-black"
           />
         ) : (
-          <ProductImage src={main?.src} alt={product.name} className="w-full aspect-[4/3] bg-white" imgClassName="object-contain p-6" />
+          <ProductImage src={main?.src} alt={product.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
         )}
       </div>
       {items.length > 1 && (
@@ -193,7 +193,7 @@ function ProductGallery({ product }: { product: import("@/data/products").Produc
               className={`relative aspect-square rounded-lg overflow-hidden border-2 bg-muted transition ${i === active ? "border-primary shadow-elegant" : "border-transparent hover:border-border"}`}
               aria-label={`View item ${i + 1}`}
             >
-              <img src={it.type === "video" ? it.poster : it.src} alt="" className="w-full h-full object-contain bg-white p-1" />
+              <img src={it.type === "video" ? it.poster : it.src} alt="" className="w-full h-full object-cover" />
               {it.type === "video" && (
                 <span className="absolute inset-0 grid place-items-center bg-black/30">
                   <span className="w-7 h-7 rounded-full bg-white/90 grid place-items-center">
