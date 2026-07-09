@@ -193,7 +193,7 @@ function ProductGallery({ product }: { product: import("@/data/products").Produc
               className={`relative aspect-square rounded-lg overflow-hidden border-2 bg-muted transition ${i === active ? "border-primary shadow-elegant" : "border-transparent hover:border-border"}`}
               aria-label={`View item ${i + 1}`}
             >
-              <img src={it.type === "video" ? it.poster : it.src} alt="" className="w-full h-full object-cover" />
+              <img src={it.type === "video" ? it.poster : it.src} alt="" className="w-full h-full object-contain bg-white p-1" />
               {it.type === "video" && (
                 <span className="absolute inset-0 grid place-items-center bg-black/30">
                   <span className="w-7 h-7 rounded-full bg-white/90 grid place-items-center">
