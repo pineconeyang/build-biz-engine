@@ -177,10 +177,10 @@ function ProductGallery({ product }: { product: import("@/data/products").Produc
             poster={main.poster}
             controls
             playsInline
-            className="w-full aspect-[4/3] object-cover bg-black"
+            className="w-full aspect-[4/3] object-contain bg-black"
           />
         ) : (
-          <ProductImage src={main?.src} alt={product.name} className="w-full aspect-[4/3]" imgClassName="object-cover" />
+          <ProductImage src={main?.src} alt={product.name} className="w-full aspect-[4/3] bg-white" imgClassName="object-contain p-6" />
         )}
       </div>
       {items.length > 1 && (
