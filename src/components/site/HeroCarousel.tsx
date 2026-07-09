@@ -15,7 +15,17 @@ const slides = [
     desc: "Practical configurations, proven components and strict pre-shipment inspection — built for high-load, long-duty industrial use across global markets.",
   },
   {
-    eyebrow: "Customization & Project Support",
+    eyebrow: "All-in-One Systems",
+    title: "Integrated Compressor + Tank + Dryer Solutions.",
+    desc: "Space-saving skid-mounted units delivered ready to run — one supplier for the complete compressed air package.",
+  },
+  {
+    eyebrow: "Customized Engineering",
+    title: "PSA Nitrogen, Oxygen & Special Gas Skids.",
+    desc: "Turnkey gas generation systems engineered to your purity, flow and site requirements — from design to container loading.",
+  },
+  {
+    eyebrow: "Project & OEM Support",
     title: "From Model Selection to Container Loading.",
     desc: "Configuration adjustment, OEM branding, reinforced export packaging, complete spare parts and responsible after-sales — one partner for the full project lifecycle.",
   },
