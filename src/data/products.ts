@@ -1091,6 +1091,7 @@ export const products: Product[] = [
     id: "screw-air-compressor",
     name: "DMZY-30A Screw Air Compressor",
     category: "Screw Compressor",
+    image: dmzy30aMain,
     tagline: "High-efficiency rotary screw compression for continuous industrial duty.",
     description:
       "A factory-direct rotary screw air compressor engineered for stable, long-hour operation. Built with proven main airend, energy-efficient motor and integrated control panel for reliable compressed air supply across manufacturing, construction and processing sites.",
@@ -1115,6 +1116,7 @@ export const products: Product[] = [
     id: "piston-air-compressor",
     name: "ROCKY Piston Air Compressor",
     category: "Piston Compressor",
+    image: siteMachineYellow,
     tagline: "Heavy-duty reciprocating compressor for workshops and field operations.",
     description:
       "Robust piston-type air compressor built for intermittent and high-pressure applications. Cast-iron cylinder, finned cooling and reinforced air tank deliver dependable performance in demanding workshop and outdoor environments.",
@@ -1139,6 +1141,7 @@ export const products: Product[] = [
     id: "refrigerated-dryer",
     name: "Refrigerated Compressed Air Dryer",
     category: "Air Treatment",
+    image: siteDetailFan,
     tagline: "Stable dew-point control to protect downstream equipment.",
     description:
       "A refrigerated air dryer that removes water vapour from compressed air systems, protecting pneumatic tools, valves and production lines. Compact design with energy-efficient refrigeration circuit.",
@@ -1163,6 +1166,7 @@ export const products: Product[] = [
     id: "air-tank",
     name: "Industrial Air Receiver Tank",
     category: "Air Storage",
+    image: siteSystem,
     tagline: "Pressure-rated storage vessels for stable air supply.",
     description:
       "Carbon-steel air receiver tanks fabricated to international pressure-vessel standards. Used to stabilise compressed air output, reduce compressor cycling and store reserve air for peak demand.",
@@ -1187,6 +1191,7 @@ export const products: Product[] = [
     id: "psa-nitrogen-generator",
     name: "PSA Nitrogen Generator System",
     category: "Custom Equipment",
+    image: dm50aasSystem1,
     tagline: "On-site nitrogen generation tailored to your project.",
     description:
       "Customized PSA (pressure swing adsorption) nitrogen generator integrated with screw compressor, dryer and air tanks. Suitable for laser cutting, electronics, food packaging, oil and gas applications.",
@@ -1211,6 +1216,7 @@ export const products: Product[] = [
     id: "spare-parts-kit",
     name: "Spare Parts & Maintenance Kits",
     category: "Spare Parts",
+    image: siteDetailAirend,
     tagline: "Complete after-sales parts support for compressor systems.",
     description:
       "Genuine and OEM-equivalent spare parts including air filters, oil filters, oil separators, lubricants, valves and motors. Maintenance kits packaged by service interval for fast deployment.",
