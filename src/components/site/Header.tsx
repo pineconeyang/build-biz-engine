@@ -4,14 +4,15 @@ import { useState } from "react";
 import logoAsset from "@/assets/longli-logo.jpg.asset.json";
 import { productCategories } from "@/data/categories";
 
-const nav = [
+type NavItem = { to: "/" | "/about" | "/products" | "/services" | "/quality" | "/contact"; label: string; hasDropdown?: boolean };
+const nav: NavItem[] = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/products", label: "Products", hasDropdown: true },
   { to: "/services", label: "Services" },
   { to: "/quality", label: "Quality" },
   { to: "/contact", label: "Contact" },
-] as const;
+];
 
 export function Header() {
   const [open, setOpen] = useState(false);
