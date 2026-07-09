@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
-import logoAsset from "@/assets/longli-logo.jpg.asset.json";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -19,8 +18,9 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoAsset.url} alt="LONGLI" className="h-10 w-auto object-contain" />
+            <div className="w-9 h-9 rounded-md bg-gradient-accent grid place-items-center text-primary-foreground font-bold">L</div>
             <div className="leading-tight">
+              <div className="font-bold text-foreground">LONGLI</div>
               <div className="text-[10px] tracking-widest text-muted-foreground uppercase">Machinery</div>
             </div>
           </Link>
