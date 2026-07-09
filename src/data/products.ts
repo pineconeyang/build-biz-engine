@@ -1,6 +1,8 @@
-import banner1 from "@/assets/banner-1.png";
-import banner2 from "@/assets/banner-2.png";
-import banner3 from "@/assets/banner-3.png";
+import banner1 from "@/assets/banners/banner-1.jpg";
+import banner2 from "@/assets/banners/banner-2.jpg";
+import banner3 from "@/assets/banners/banner-3.jpg";
+import banner4 from "@/assets/banners/banner-4.jpg";
+import banner5 from "@/assets/banners/banner-5.jpg";
 import siteFactory from "@/assets/site-factory.jpg";
 import siteSystem from "@/assets/site-system.jpg";
 import siteMachineBlue from "@/assets/site-machine-blue.jpg";
@@ -1231,4 +1233,4 @@ export const products: Product[] = [
   },
 ];
 
-export const banners = [banner1, banner2, banner3];
+export const banners = [banner1, banner2, banner3, banner4, banner5];
